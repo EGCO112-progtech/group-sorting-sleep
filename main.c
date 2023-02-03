@@ -20,6 +20,7 @@ int main(int argc,char **argv) {
   else {
     printf("Incorrect type\n");
   }
+  printf("\n");
   display(a,n);
  return 0;
 }
