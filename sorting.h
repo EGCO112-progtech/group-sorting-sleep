@@ -33,7 +33,7 @@ void selectionSort(int a[],int n){
     //printf("\n[%d]",*max);
     if(newMaxFound==1) swap(&a[j], max);
     display(a,n);
-    printf("\n\n");
+    printf("\n");
   }
 }
 
@@ -47,7 +47,7 @@ void insertionSort(int a[],int n){
       }
       a[j+1] = v;
       display(a,n);
-      printf("\n\n");
+      printf("\n");
    }
 }
 
@@ -65,7 +65,7 @@ void bubbleSort(int a[],int n){
         display(a, n);
       }
       display(a,n);
-      printf("\n\n");
+      printf("\n");
       if (sorted == 0) break;
   }
   
