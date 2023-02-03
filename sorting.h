@@ -18,12 +18,21 @@ void selectionSort(int data[], int length)
      
 	
 } 
-
-
-
-void insertion(int a[],int n){
-
-
+void insertion(int a[],int n)
+{
+    int i,j,v;
+    for(i = 1;i<n;i++)
+  {
+     v= a[i];
+     for (j=i-1; j>= 0 && a[j]<v;j--)
+     {
+       a[j+1] = a[j];
+       display(a,n);
+     }
+   a[j+1] = v;
+   display(a,n);
+    printf("\n");
+   }
 }
 
 void swap(int *a,int *b){
