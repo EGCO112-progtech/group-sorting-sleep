@@ -11,7 +11,6 @@ int main(int argc,char **argv) {
     a[i]=atoi(argv[i+2]);
   }
   display(a,n);
-  printf("\n");
   if(strcmp(argv[1],"bubble")==0)
       bubbleSort(a,n);
   else  if(strcmp(argv[1],"insertion")==0)
@@ -21,7 +20,6 @@ int main(int argc,char **argv) {
   else {
     printf("Incorrect type\n");
   }
-  printf("\n");
   display(a,n);
  return 0;
 }
