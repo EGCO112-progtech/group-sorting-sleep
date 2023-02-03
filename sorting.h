@@ -27,6 +27,7 @@ void selectionSort(int a[],int n){
       if(*max<a[i]){
         max=&a[i];
         newMaxFound=1;
+        break;
       }
       display(a,n);
     }
