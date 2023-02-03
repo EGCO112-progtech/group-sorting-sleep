@@ -31,6 +31,7 @@ void insertion(int a[],int n)
      }
    a[j+1] = v;
    display(a,n);
+    printf("\n");
    }
 }
 
