@@ -37,40 +37,36 @@ void selectionSort(int a[],int n){
   }
 }
 
-void insertion(int a[],int n)
-{
+void insertionSort(int a[],int n){
     int i,j,v;
-    for(i = 1;i<n;i++)
-  {
-     v= a[i];
-     for (j=i-1; j>= 0 && a[j]<v;j--)
-     {
-       a[j+1] = a[j];
-       display(a,n);
-     }
-   a[j+1] = v;
-   display(a,n);
-    printf("\n");
+    for(i = 1;i<n;i++){
+      v= a[i];
+      for (j=i-1; j>= 0 && a[j]<v;j--){
+        a[j+1] = a[j];
+        display(a,n);
+      }
+      a[j+1] = v;
+      display(a,n);
+      printf("\n");
    }
 }
 
 void bubbleSort(int a[],int n){
-
- int i, j;
+  int i,j;
   int sorted;
   display(a,n);
-  for (i = 0; i < n ; i++) {
-    sorted = 0;
-    for (j = 0; j < n - 1 ; j++) {
-      if (a[j] < a[j + 1]) {
-        swap(&a[j], &a[j + 1]);
-        sorted = 1;
-      }
-      display(a, n);
-    }printf("\n");
-    if (sorted == 0) break;
+  for (i = 0; i < n ; i++){
+      sorted = 0;
+      for (j = 0; j < n - 1 ; j++) {
+        if (a[j] < a[j + 1]) {
+          swap(&a[j], &a[j + 1]);
+          sorted = 1;
+        }
+        display(a, n);
+      }printf("\n");
+      if (sorted == 0) break;
   }
-    display(a,n);
+  display(a,n);
 }
 
 
