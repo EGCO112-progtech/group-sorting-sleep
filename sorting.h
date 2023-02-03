@@ -11,19 +11,18 @@ void display(int a[],int n){
 }
 
 void selectionSort(int a[],int n){
-  int i,j,*min;
-  int newMinFound=0;
+  int i,j,*max;
+  int newMaxFound=0;
   for(j=0;j<n;j++){
-    newMinFound=0;
-    min=&a[j];
+    newMaxFound=0;
+    max=&a[n];
     for(i=0+j;i<n;i++){
-      if(*min>a[i]){
-        min=&a[i];
-        newMinFound=1;
+      if(*max<a[i]){
+        max=&a[i];
+        newMaxFound=1;
       }
     }
-    //printf("[%d]\n",*min);
-    if(newMinFound==1) swap(&a[j], min);
+    if(newMaxFound==1) swap(&a[j], max);
     display(a,n);
   }
 }
