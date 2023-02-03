@@ -20,7 +20,7 @@ void swap(int *a,int *b){
 void selectionSort(int a[],int n){
   int i,j,*max;
   int newMaxFound=0;
-  for(j=0;j<n;j++){
+  for(j=0;j<n-1;j++){
     newMaxFound=0;
     max=&a[n];
     for(i=0+j;i<n;i++){
@@ -28,12 +28,17 @@ void selectionSort(int a[],int n){
         max=&a[i];
         newMaxFound=1;
       }
-      //display(a,n);
+     //display(a,n);
     }
-    if(newMaxFound==1) swap(&a[j], max);
-    display(a,n);
-    printf("\n");
+    if(newMaxFound==1) 
+    {
+      swap(&a[j], max);
+      display(a,n);
+      printf("\n");
+    }
   }
+   
+  printf("\n"); 
 }
 
 void insertionSort(int a[],int n){
@@ -48,7 +53,7 @@ void insertionSort(int a[],int n){
       display(a,n);
       printf("\n");
     }
-    display(a,n);
+    //display(a,n);
     printf("\n");
       
 }
@@ -67,6 +72,5 @@ void bubbleSort(int a[],int n){
       }
       printf("\n");
       if (sorted == 0) break;
-  }
-  display(a,n);
 }
+  }
