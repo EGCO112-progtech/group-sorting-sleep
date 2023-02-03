@@ -24,7 +24,7 @@ void insertion(int a[],int n)
     for(i = 1;i<n;i++)
   {
      v= a[i];
-     for (j=i-1; j>= 0 && a[j]>v;j--)
+     for (j=i-1; j>= 0 && a[j]<v;j--)
      {
        a[j+1] = a[j];
        display(a,n);
