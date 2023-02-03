@@ -10,6 +10,13 @@ void display(int a[],int n){
   
 }
 
+void swap(int *a,int *b){
+ int temp;
+  temp=*a;
+  *a=*b;
+  *b=temp;
+}
+
 void selectionSort(int a[],int n){
   int i,j,*max;
   int newMaxFound=0;
@@ -45,14 +52,6 @@ void insertion(int a[],int n)
    display(a,n);
     printf("\n");
    }
-}
-
-void swap(int *a,int *b){
- int temp;
-  temp=*a;
-  *a=*b;
-  *b=temp;
-  
 }
 
 void bubbleSort(int a[],int n){
