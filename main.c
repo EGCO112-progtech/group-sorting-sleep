@@ -1,6 +1,4 @@
-#define N 6
 #include <stdio.h>
-
 #include "sorting.h"
 
 int main() {
