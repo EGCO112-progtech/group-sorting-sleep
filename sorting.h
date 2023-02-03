@@ -21,9 +21,12 @@ void selectionSort(int a[],int n){
         max=&a[i];
         newMaxFound=1;
       }
+      display(a,n);
     }
+    //printf("\n[%d]",*max);
     if(newMaxFound==1) swap(&a[j], max);
     display(a,n);
+    printf("\n\n");
   }
 }
 
