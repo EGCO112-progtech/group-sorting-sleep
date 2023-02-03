@@ -48,7 +48,7 @@ void insertionSort(int a[],int n){
       a[j+1] = v;
       printf("\n");
     }
-    //display(a,n);
+    display(a,n);
     printf("\n");
 }
 
