@@ -10,14 +10,23 @@ void display(int a[],int n){
   
 }
 
-void selectionSort(int data[], int length) 
-{ 
-	int i, j, m, mi; 
-	
-     display(data,length);
-     
-	
-} 
+void selectionSort(int a[],int n){
+  int i,j,*min;
+  int newMinFound=0;
+  for(j=0;j<n;j++){
+    newMinFound=0;
+    min=&a[j];
+    for(i=0+j;i<n;i++){
+      if(*min>a[i]){
+        min=&a[i];
+        newMinFound=1;
+      }
+    }
+    //printf("[%d]\n",*min);
+    if(newMinFound==1) swap(&a[j], min);
+    display(a,n);
+  }
+}
 
 
 
