@@ -39,7 +39,6 @@ void selectionSort(int a[],int n){
 
 void insertionSort(int a[],int n){
     int i,j,v;
-    display(a,n);
     for(i = 1;i<n;i++){
       v= a[i];
       for (j=i-1; j>= 0 && a[j]<v;j--){
@@ -56,7 +55,6 @@ void insertionSort(int a[],int n){
 void bubbleSort(int a[],int n){
   int i,j;
   int sorted;
-  display(a,n);
   for (i = 0; i < n ; i++){
       sorted = 0;
       for (j = 0; j < n - 1 ; j++) {

@@ -10,6 +10,7 @@ int main(int argc,char **argv) {
   for(i=0;i<n;i++){
     a[i]=atoi(argv[i+2]);
   }
+  display(a,n);
   if(strcmp(argv[1],"bubble")==0)
       bubbleSort(a,n);
   else  if(strcmp(argv[1],"insertion")==0)
