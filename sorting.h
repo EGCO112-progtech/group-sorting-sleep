@@ -47,7 +47,7 @@ void insertionSort(int a[],int n){
       }
       a[j+1] = v;
       display(a,n);
-      printf("\n");
+      printf("\n\n");
    }
 }
 
@@ -63,10 +63,12 @@ void bubbleSort(int a[],int n){
           sorted = 1;
         }
         display(a, n);
-      }printf("\n");
+      }
+      display(a,n);
+      printf("\n\n");
       if (sorted == 0) break;
   }
-  display(a,n);
+  
 }
 
 
